@@ -6,7 +6,7 @@ Brought to you by Mike1072 and CamDawg
 
 This utility is designed to simplify the creation of mod packages for different operating systems.  Once everything has been set up, you will be able to create a Windows, OS X, and Linux package for your mod with one double-click.
 
-This was created in conjunction with [Real Mod](mike1072/RealMod), a fully-functioning mod that exists to showcase how to use this packaging utility and demonstrate the current best practices for audio conversion, character set handling, and tileset decompression.  When packaging your mod for the first time, you will need to copy and modify some of the files included in Real Mod.
+This was created in conjunction with [Real Mod](https://GitHub.com/Gibberlings3/RealMod), a fully-functioning mod that exists to showcase how to use this packaging utility and demonstrate the current best practices for audio conversion, character set handling, and tileset decompression.  When packaging your mod for the first time, you will need to copy and modify some of the files included in Real Mod.
 
 
 ## Instructions
@@ -34,6 +34,7 @@ When that's done, you should have one directory containing 3 folders: **ModPacka
 2. Run **package_mod.bat** in the folder for your mod to create mod packages for all appropriate operating systems.
 
 For future updates to the mod, you only need to update the version number in **package_mod.bat** and then run it.
+
 
 ## Contact Information
 
