@@ -38,7 +38,7 @@ For future updates to the mod, you only need to update the version number in **p
 
 ## Contact Information
 
-Comments about the packaging utility can be directed to [this forum thread](http://forums.gibberlings3.net/index.php?showtopic=26717).  If the thread is inaccessible, you can contact [Mike1072](http://gibberlings3.net/forums/index.php?showuser=1412) on the Gibberlings 3 forums.
+Comments about the packaging utility can be directed to [this forum thread](http://gibberlings3.net/forums/index.php?showtopic=26717).  If the thread is inaccessible, you can contact [Mike1072](http://gibberlings3.net/forums/index.php?showuser=1412) on the Gibberlings 3 forums.
 
 
 ## Version History
