@@ -43,6 +43,11 @@ Comments about the packaging utility can be directed to [this forum thread](http
 
 ## Version History
 
+Version 6 - September 13, 2016
+
+- Updated to WeiDU v239
+
+
 Version 5 - December 29, 2015
 
 - Rewrote .bat files so they will function when called from a separate folder
