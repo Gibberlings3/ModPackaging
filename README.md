@@ -43,6 +43,11 @@ Comments about the packaging utility can be directed to [this forum thread](http
 
 ## Version History
 
+Version 7 - October 3, 2016
+
+- Updated to WeiDU v240
+
+
 Version 6 - September 13, 2016
 
 - Updated to WeiDU v239
