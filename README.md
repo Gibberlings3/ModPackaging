@@ -15,8 +15,8 @@ This was created in conjunction with [Real Mod](https://GitHub.com/Gibberlings3/
 ### Set Up Your Folders
 
 1. Place the contents of this repository in a folder named **ModPackaging**.
-2. In the directory that contains **ModPackaging**, create a folder for your mod.  Place the files and folders for your mod that would normally be extracted to the IE game directory there.  You do not need to include WeiDU.
-3. In the directory that contains **ModPackaging**, create a folder named **RealMod** and place the contents of [Real Mod](https://GitHub.com/Gibberlings3/RealMod) there.
+2. In the directory that contains the **ModPackaging** folder, create a folder for your mod.  Place the files and folders for your mod that would normally be extracted to the IE game directory there.  You do not need to include WeiDU.
+3. In the directory that contains the **ModPackaging** folder, create a folder named **RealMod** and place the contents of [Real Mod](https://GitHub.com/Gibberlings3/RealMod) there.
 
 When that's done, you should have one directory containing 3 folders: **ModPackaging**, **RealMod**, and **YourModNameHere**.
 
