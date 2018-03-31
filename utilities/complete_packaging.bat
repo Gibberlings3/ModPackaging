@@ -12,7 +12,7 @@ echo Packaging "%mod_name%, %mod_version%":
 
 REM /* set up remaining variables */
 set mod_setup=setup-%mod_folder%
-set archive_name=%mod_folder%-%mod_version%
+set archive_name="%mod_folder%-%mod_version%"
 set win_archive=%archive_name%.exe
 set osx_archive_tar=osx-%archive_name%.tar
 set osx_archive=%osx_archive_tar%.gz

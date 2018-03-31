@@ -43,6 +43,11 @@ Comments about the packaging utility can be directed to [this forum thread](http
 
 ## Version History
 
+Version 8 - March 31, 2018
+
+- Updated to WeiDU v244
+- Now supports spaces in version numbers (e.g. "Beta 1")
+
 Version 7 - October 3, 2016
 
 - Updated to WeiDU v240
