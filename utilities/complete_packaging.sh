@@ -16,7 +16,7 @@ echo "Packaging ${mod_name}, ${mod_version}:"
 # /* set up remaining variables */
 export mod_setup="setup-${mod_folder}"
 export archive_name="${mod_folder}-${mod_version}"
-export win_archive="${archive_name}.exe"
+export win_archive="${archive_name}.zip"
 export osx_archive_tar="osx-${archive_name}.tar"
 export osx_archive="${osx_archive_tar}.gz"
 export lin_archive_tar="lin-${archive_name}.tar"
@@ -80,16 +80,10 @@ if [ "${build_windows}" -eq "1" ]
 then
   echo "Creating ${win_archive} for Windows..."
 
-  # /* duplicate the g3 template sfx configuration file and swap the actual mod information into the copy */
-  cp -f "$(dirname $0)/../g3template.conf" "${sfx_conf}" >/dev/null
-  sed -i.bak -e "s/#mod_name#/${mod_name}/g" -e "s/#mod_version#/${mod_version}/g" -e "s/#mod_readme#/${mod_readme}/g" -e "s/#mod_setup#/${mod_setup}/g" -e "s/#compatible_games#/${compatible_games}/g" ${sfx_conf}
   rm -f ${sfx_conf}.bak >/dev/null 2>&1
   
-  # /* create the windows sfx archive, using our modified configuration and setting a custom icon and banner */
-  rar a -sfx -z${sfx_conf} -iicon"${sfx_ico}" -iimg"${sfx_banner}" -x${sox} -x${tisunpack_unix} -x${tisunpack_osx} ${win_archive} ${win_files}
-
-  # /* remove the generated configuration file */
-  rm -f ${sfx_conf} >/dev/null 2>&1
+  # /* create the windows zip archive */
+  zip -r "${win_archive}" ${win_files} -x"${sox}" -x"${tisunpack_unix}" -x"${tisunpack_osx}"
 
   echo     Done.
 fi
