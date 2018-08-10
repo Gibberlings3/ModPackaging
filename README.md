@@ -25,15 +25,29 @@ When that's done, you should have one directory containing 3 folders: **ModPacka
 
 1. The G3 icons were officially updated in 2015, so make sure to grab the latest .bmp and .ico files from the **RealMod\real_mod\style** directory. The banner file format had to be changed, so your mod needs the new files for packaging to succeed.
 2. Modern versions of OS X cannot run the old sox and tisunpack programs that are included in many mods.  If your mod has audio, grab the latest sox from the **RealMod\real_mod\audio** directory.  If it has tilesets, grab the latest tisunpack from the **RealMod\real_mod\tiz\osx** directory.
-3. Create a copy of **RealMod\package_mod.bat** and place it in the folder for your mod.
 
 
-### Package a New Version
+### Package a New Version (Windows)
 
-1. Use a text editor to open **package_mod.bat** in the folder for your mod.  Follow the included instructions to modify the file so that it reflects the properties of your mod.
-2. Run **package_mod.bat** in the folder for your mod to create mod packages for all appropriate operating systems.
+1. Create a copy of **RealMod\package_mod.bat** and place it in the folder for your mod.
+2. Use a text editor to open **package_mod.bat** in the folder for your mod.  Follow the included instructions to modify the file so that it reflects the properties of your mod.
+3. Run **package_mod.bat** in the folder for your mod to create mod packages for all appropriate operating systems.
 
 For future updates to the mod, you only need to update the version number in **package_mod.bat** and then run it.
+
+
+### Package a New Version (Linux)
+
+1. Make sure you have the following tools available in your $PATH: sed, tar, gzip and zip.  Unlike the Windows version, they are not included with the mod.  On most Linux distributions, they are likely already there.  If not, follow your distribution's instructions for installing the appropriate packages.
+2. Create a copy of **RealMod/package_mod.sh** and place it in the folder for your mod.
+3. Use a text editor to open **package_mod.sh** in the folder for your mod.  Follow the included instructions to modify the file so that it reflects the properties of your mod.
+4. Run **bash package_mod.sh** in the folder for your mod to create mod packages for all appropriate operating systems.
+
+For future updates to the mod, you only need to update the version number in **package_mod.sh** and then run it.
+
+Notes for Linux:
+- Creating a Windows self-extracting archive on Linux is currently not possible.  The Windows archive will be a regular zip file instead.
+- The option to lower-case all filenames is disabled by default, as messing with case tends to do bad things on Linux, especially in EE games.  If you enable it, make sure you have the tolower tool from WeiDU in your path.
 
 
 ## Contact Information
