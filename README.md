@@ -57,6 +57,10 @@ Comments about the packaging utility can be directed to [this forum thread](http
 
 ## Version History
 
+Version 10 - October 25, 2018
+
+- Changed format of Linux and Mac packages from .tar.gz to .zip
+
 Version 9 - August 10, 2018
 
 - Updated to WeiDU v246
