@@ -14,10 +14,8 @@ REM /* set up remaining variables */
 set mod_setup=setup-%mod_folder%
 set archive_name="%mod_folder%-%mod_version%"
 set win_archive=%archive_name%.exe
-set osx_archive_tar=osx-%archive_name%.tar
-set osx_archive=%osx_archive_tar%.gz
-set lin_archive_tar=lin-%archive_name%.tar
-set lin_archive=%lin_archive_tar%.gz
+set osx_archive=osx-%archive_name%.zip
+set lin_archive=lin-%archive_name%.zip
 set files=%mod_folder%
 
 REM /* automatically detect .tp2 located outside of mod folder */
@@ -92,9 +90,7 @@ if [%build_osx%]==[1] (
   echo   Creating %osx_archive% for OS X...
 
   REM /* create OS X archive */
-  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%tisunpack_win32% -x^!%tisunpack_unix% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %osx_archive_tar% %osx_files% >nul
-  "%~dp0\7za.exe" a %osx_archive% %osx_archive_tar% >nul
-  del %osx_archive_tar% >nul 2>nul
+  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%tisunpack_win32% -x^!%tisunpack_unix% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %osx_archive% %osx_files% >nul
 
   echo     Done.
 )
@@ -103,9 +99,7 @@ if [%build_linux%]==[1] (
   echo   Creating %lin_archive% for Linux...
 
   REM /* create linux archive */
-  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%sox% -x^!%tisunpack_win32% -x^!%tisunpack_osx% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %lin_archive_tar% %lin_files% >nul
-  "%~dp0\7za.exe" a %lin_archive% %lin_archive_tar% >nul
-  del %lin_archive_tar% >nul 2>nul
+  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%sox% -x^!%tisunpack_win32% -x^!%tisunpack_osx% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %lin_archive% %lin_files% >nul
 
   echo     Done.
 )
