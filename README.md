@@ -27,7 +27,9 @@ When that's done, you should have one directory containing 3 folders: **ModPacka
 2. Modern versions of OS X cannot run the old sox and tisunpack programs that are included in many mods.  If your mod has audio, grab the latest sox from the **RealMod\real_mod\audio** directory.  If it has tilesets, grab the latest tisunpack from the **RealMod\real_mod\tiz\osx** directory.
 
 
-### Package a New Version (Windows)
+### Package a New Release
+
+#### If You're Using Windows
 
 1. Create a copy of **RealMod\package_mod.bat** and place it in the folder for your mod.
 2. Use a text editor to open **package_mod.bat** in the folder for your mod.  Follow the included instructions to modify the file so that it reflects the properties of your mod.
@@ -36,7 +38,7 @@ When that's done, you should have one directory containing 3 folders: **ModPacka
 For future updates to the mod, you only need to update the version number in **package_mod.bat** and then run it.
 
 
-### Package a New Version (Linux)
+#### If You're Using Linux
 
 1. Make sure you have the following tools available in your $PATH: sed, tar, gzip and zip.  Unlike the Windows version, they are not included with the mod.  On most Linux distributions, they are likely already there.  If not, follow your distribution's instructions for installing the appropriate packages.
 2. Create a copy of **RealMod/package_mod.sh** and place it in the folder for your mod.
