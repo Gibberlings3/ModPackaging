@@ -58,6 +58,9 @@ SET oggdec=%audio_folder%\oggdec.exe
 SET tisunpack_win32=%tispack_folder%\win32
 SET tisunpack_unix=%tispack_folder%\unix
 SET tisunpack_osx=%tispack_folder%\osx
+SET tile2ee_win32=%tile2ee_folder%\win32
+SET tile2ee_unix=%tile2ee_folder%\unix
+SET tile2ee_osx=%tile2ee_folder%\osx
 SET iconv=%iconv_folder%
 SET desktop_ini=%mod_folder%\desktop.ini
 SET folder_icon=%ico_folder%\g3.ico
@@ -78,7 +81,7 @@ if [%build_windows%]==[1] (
   del %sfx_conf%.bak >nul 2>nul
   
   REM /* create the windows sfx archive, using our modified configuration and setting a custom icon and banner */
-  "%~dp0\winrar.exe" a -sfx -z%sfx_conf% -iicon"%sfx_ico%" -iimg"%sfx_banner%" -x%sox% -x%tisunpack_unix% -x%tisunpack_osx% %win_archive% %win_files%
+  "%~dp0\winrar.exe" a -sfx -z%sfx_conf% -iicon"%sfx_ico%" -iimg"%sfx_banner%" -x%sox% -x%tisunpack_unix% -x%tisunpack_osx% -x%tile2ee_unix% -x%tile2ee_osx% %win_archive% %win_files%
 
   REM /* remove the generated configuration file */
   del %sfx_conf% >nul 2>nul
@@ -90,7 +93,7 @@ if [%build_osx%]==[1] (
   echo   Creating %osx_archive% for OS X...
 
   REM /* create OS X archive */
-  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%tisunpack_win32% -x^!%tisunpack_unix% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %osx_archive% %osx_files% >nul
+  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%tisunpack_win32% -x^!%tisunpack_unix% -x^!%tile2ee_win32% -x^!%tile2ee_unix% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %osx_archive% %osx_files% >nul
 
   echo     Done.
 )
@@ -99,7 +102,7 @@ if [%build_linux%]==[1] (
   echo   Creating %lin_archive% for Linux...
 
   REM /* create linux archive */
-  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%sox% -x^!%tisunpack_win32% -x^!%tisunpack_osx% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %lin_archive% %lin_files% >nul
+  "%~dp0\7za.exe" a -x^!%oggdec% -x^!%sox% -x^!%tisunpack_win32% -x^!%tisunpack_osx% -x^!%tile2ee_win32% -x^!%tile2ee_osx% -x^!%iconv% -x^!%desktop_ini% -x^!%folder_icon% -x^!%sfx_banner% %lin_archive% %lin_files% >nul
 
   echo     Done.
 )
