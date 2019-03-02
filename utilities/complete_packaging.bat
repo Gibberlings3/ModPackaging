@@ -89,6 +89,15 @@ if [%build_windows%]==[1] (
   echo     Done.
 )
 
+if [%build_windows_zip%]==[1] (
+  echo   Creating %archive_name%.zip for Windows...
+  
+  REM /* create the windows sfx archive, using our modified configuration and setting a custom icon and banner */
+  "%~dp0\winrar.exe" a -x%sox% -x%tisunpack_unix% -x%tisunpack_osx% -x%tile2ee_unix% -x%tile2ee_osx% %archive_name%.zip %win_files%
+
+  echo     Done.
+)
+
 if [%build_osx%]==[1] (
   echo   Creating %osx_archive% for OS X...
 

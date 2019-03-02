@@ -54,23 +54,41 @@ Notes for Linux:
 
 ## Contact Information
 
-Comments about the packaging utility can be directed to [this forum thread](http://gibberlings3.net/forums/index.php?showtopic=26717).  If the thread is inaccessible, you can contact [Mike1072](http://gibberlings3.net/forums/index.php?showuser=1412) on the Gibberlings 3 forums.
+Comments about the packaging utility can be directed to [this forum thread](https://www.gibberlings3.net/forums/topic/26717-g3-mod-packaging-made-easy/).  If the thread is inaccessible, you can contact [Mike1072](https://www.gibberlings3.net/profile/1412-mike1072/) on the Gibberlings Three forums.
 
 
 ## Version History
+
+Version 12 - March 2, 2019
+
+- If you want zip files instead of SFX packages for Windows, you can use the new build_windows_zip parameter instead of build_windows. For non-Windows users there is no change since the tool has always built zip files for Windows. 
+
+
+Version 11 - January 27, 2019
+
+- Tool now supports tile2ee formats with new tile2ee_folder parameter
+
 
 Version 10 - October 25, 2018
 
 - Changed format of Linux and Mac packages from .tar.gz to .zip
 
+
+Version 10 - October 25, 2018
+
+- Changed format of Linux and Mac packages from .tar.gz to .zip
+
+
 Version 9 - August 10, 2018
 
 - Updated to WeiDU v246
+
 
 Version 8 - March 31, 2018
 
 - Updated to WeiDU v244
 - Now supports spaces in version numbers (e.g. "Beta 1")
+
 
 Version 7 - October 3, 2016
 
