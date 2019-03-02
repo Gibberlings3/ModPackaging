@@ -73,10 +73,10 @@ fi
 
 if [ "${build_windows_zip}" -eq "1" ]
 then
-  echo "Creating ${win_archive} for Windows..."
+  echo "Creating win-${win_archive} for Windows..."
 
   # /* create the windows zip archive */
-  zip -q -r "${win_archive}" "${mod_folder}" "${mod_setup}.exe" -x "${sox}" "${tisunpack_unix}/*" "${tisunpack_osx}/*" "${tile2ee_unix}/*" "${tile2ee_osx}/*"
+  zip -q -r "win-${win_archive}" "${mod_folder}" "${mod_setup}.exe" -x "${sox}" "${tisunpack_unix}/*" "${tisunpack_osx}/*" "${tile2ee_unix}/*" "${tile2ee_osx}/*"
   [ -f "${mod_folder}.tp2" ] && zip -q "${win_archive}" "${mod_folder}.tp2"
   [ -f "${mod_setup}.tp2" ] && zip -q "${win_archive}" "${mod_setup}.tp2"
 
