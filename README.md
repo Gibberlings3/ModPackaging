@@ -59,6 +59,11 @@ Comments about the packaging utility can be directed to [this forum thread](http
 
 ## Version History
 
+Version 13 - December 13, 2019
+
+- Added md2html for generating HTML versions of any Markdown files in the root directory of the mod and including them in the mod folder during packaging.
+
+
 Version 12 - March 2, 2019
 
 - If you want zip files instead of SFX packages for Windows, you can use the new build_windows_zip parameter instead of build_windows. For non-Windows users there is no change since the tool has always built zip files for Windows. 
