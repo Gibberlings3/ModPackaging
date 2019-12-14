@@ -1,0 +1,57 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "md2html/1.0.0": {
+        "dependencies": {
+          "CommandLineParser": "2.6.0",
+          "Markdig": "0.18.0"
+        },
+        "runtime": {
+          "md2html.dll": {}
+        }
+      },
+      "CommandLineParser/2.6.0": {
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.6.0.0",
+            "fileVersion": "2.6.0.0"
+          }
+        }
+      },
+      "Markdig/0.18.0": {
+        "runtime": {
+          "lib/netcoreapp2.1/Markdig.dll": {
+            "assemblyVersion": "0.18.0.0",
+            "fileVersion": "0.18.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "md2html/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommandLineParser/2.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jjJ2Ey2pPY6OeY74Qau2cH+M+pN4kvvSP+kKlDzIZUcJs1oK+QlNjQYnm8HQj2fQa2aZLtwJig4MI0Vbx4YBSA==",
+      "path": "commandlineparser/2.6.0",
+      "hashPath": "commandlineparser.2.6.0.nupkg.sha512"
+    },
+    "Markdig/0.18.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xfz7jqFuld0+dEIIHVd7hfCbsIwERGval5lhQkHRI4o8yOHmTNjLzqRhNOC2cRnEgn5/0mU1jF+ntXDOxlXrRQ==",
+      "path": "markdig/0.18.0",
+      "hashPath": "markdig.0.18.0.nupkg.sha512"
+    }
+  }
+}
