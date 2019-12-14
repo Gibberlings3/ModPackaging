@@ -25,7 +25,7 @@ export sfx_banner="${ico_folder}/g3banner.bmp"
 export sfx_conf="mod.conf"
 
 # /* generate HTML versions of Markdown files */
-dotnet "$(dirname $0)/md2html/md2html.dll" -f "${ico_folder}/g3icon.ico" -s "https://gibberlings3.github.io/Documentation/readmes/style/g3md.css" -o "${mod_folder}" .
+dotnet "$(dirname $0)/md2html/md2html.dll" -f "https://gibberlings3.github.io/Documentation/readmes/style/g3icon.ico" -s "https://gibberlings3.github.io/Documentation/readmes/style/g3md.css" -o "${mod_folder}" .
 
 # /* remove any previously created archives */
 rm -f "$win_archive"
