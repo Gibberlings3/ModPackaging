@@ -14,7 +14,7 @@ REM /* set up remaining variables */
 set mod_setup=setup-%mod_folder%
 set archive_name="%mod_folder%-%mod_version%"
 set win_archive=%archive_name%.exe
-set osx_archive=osx-%archive_name%.zip
+set osx_archive=mac-%archive_name%.zip
 set lin_archive=lin-%archive_name%.zip
 set files=%mod_folder%
 
